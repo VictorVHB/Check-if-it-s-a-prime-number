@@ -1,0 +1,18 @@
+x = 2
+
+while x > 0:
+    n = int(input("Digite o número: "))
+    a = 2
+    b = n % a
+    if b == 0 and n > 2:
+        print("Não é um número primo!")
+    else:
+        while x > 0:
+            a = a + 1
+            if a == n:
+                print("É um número primo!")
+                break
+            elif b == 0:
+                print("Não é um número primo!")
+                break
+            b = n % a
